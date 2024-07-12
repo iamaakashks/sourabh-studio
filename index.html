@@ -13,16 +13,27 @@
             <a class="sourabh-studio" href="#">Sourabh<span id="studio">Studio</span></a>
         </div>
         <div class="right-header">
-            <a class="about" href="#">about</a>
-            <a class="contact" href="#">contact us</a>
+            <a class="about" href="#home">about</a>
+            <a class="contact" href="#contact">contact us</a>
         </div>
     </header>
-    <section class="page1" id="page1">
-        <div class="about-box">
-            <div class="about">
-                <h2>नमस्कार <span>मित्रों !</span></h2>
-                <p>My name is Ankit Kumar Suman</p>
-            </div>
+    <section class="page1" id="home">
+        <div class="page-container">
+            <div class="left-box-page1"></div>
+            <div class="right-box-page1"></div>
+        </div>
+    </section>
+    <section class="page2" id="contact">
+        <div class="contact-page">
+            <h2>Contact Us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="8d5f519f-1ba5-4ff7-9c1b-f9e2fe877780">
+                <input class="text-intput" type="text" placeholder="Enter Name*" name="Name" required/>
+                <input class="text-intput" type="email" placeholder="Enter Email*" name="Email-id" required/>
+                <input class="text-intput" type="number" placeholder="Phone Number*" name="Number" required />
+                <textarea name="Message" placeholder="Your message..." rows="8"></textarea>
+                <button class="btn" type="submit">Send</button>
+            </form>
         </div>
     </section>
     <script src="script.js"></script>
